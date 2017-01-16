@@ -1,0 +1,42 @@
+<ion-view>
+    <ion-content style="background-image: url('img/Kuvat/tausta1.jpg'); background-size: cover" ng-controller="frontpageController">
+        
+    <ion-slide-box>
+        <ion-slide><img src="img/Slideshow/img1.jpg" alt="" style="width:calc(100% - 20px);margin:10px 10px 0px 10px;"></ion-slide>
+        <ion-slide><img src="img/Slideshow/img2.jpg" alt="" style="width:calc(100% - 20px);margin:10px 10px 0px 10px;"></ion-slide>
+        <ion-slide><img src="img/Slideshow/img3.jpg" alt="" style="width:calc(100% - 20px);margin:10px 10px 0px 10px;"></ion-slide>
+        <ion-slide><img src="img/Slideshow/img4.jpg" alt="" style="width:calc(100% - 20px);margin:10px 10px 0px 10px;"></ion-slide>
+        <ion-slide><img src="img/Slideshow/img5.jpg" alt="" style="width:calc(100% - 20px);margin:10px 10px 0px 10px;"></ion-slide>
+    </ion-slide-box>
+        
+        <div class="card">
+            <div class="row">
+                <div class="col">
+                    <div ng-repeat="t in textContent">
+                        <h3 style="text-align: center;" ng-if="t.style === 'Otsikko'">
+                            {{ t.content}}
+                        </h3>
+                        <p style="text-align: center;padding-bottom:3%;" ng-if="t.style === 'Teksti'">
+                            {{ t.content}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="margin-bottom:25px;">
+            <div class="row">
+                <div class="col">
+                    <iframe id="iframe1" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fduuniexpo%2F&tabs=timeline&width=280&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="280" height="500" style="border:none;overflow:hidden;display:block;margin:auto;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </div>
+            </div>  
+        </div>
+        
+        <div class="card">
+            <div class='row'>
+                <div class='col'>
+                    <img src="img/Kuvat/lamk_tunnus_vaaka_mv.png" alt="" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

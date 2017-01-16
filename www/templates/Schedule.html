@@ -1,0 +1,68 @@
+<ion-view>
+    <ion-content style="background-image: url('img/Kuvat/tausta1.jpg'); background-size: cover" ng-controller="scheduleController">   
+        <!--<div class="bar bar-header bar-header-opacity">
+            <h1 class="title">Aikataulu</h1>
+        </div>
+        <div class="row" style="height: 43px;"></div>-->
+
+        <style>
+
+        body
+        {
+            font-family: arial;
+        }
+
+        th,td
+        {
+            margin: 0;
+            text-align: center;
+            border-collapse: collapse;
+            outline: 1px solid #DCDCDC;
+        }
+
+        td
+        {
+            padding: 20px 20px;
+        }
+
+        th
+        {
+            background: #199cd8;
+            color: white;
+            padding: 20px 20px;
+        }
+
+        td:hover
+        {
+            cursor: pointer;
+            background: #199cd8;
+            color: white;
+        }
+        </style>  
+        
+        <div class="card">
+            <table style="width: 100%; text-align:center;" >				 
+                    <div>
+                        <div id="head_nav">
+                            <tr>
+                                <th style="width: 40%;">Aika</th>
+                                <th> Päälava esiintyjä</th>
+                            </tr>
+                        </div> 
+                        <tr ng-repeat="performers in timetable">
+                            <th>{{performers.time}}</th>       
+                            <td>{{performers.performer}}</td>  
+                        </tr>
+                    </div>
+            </table>
+        </div>
+        
+        <div class="card">
+            <div class='row'>
+                <div class='col'>
+                    <img src="img/Kuvat/lamk_tunnus_vaaka_mv.png" alt="" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+        </card>
+    </ion-content>
+</ion-view>

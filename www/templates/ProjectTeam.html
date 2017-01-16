@@ -1,0 +1,49 @@
+<ion-view>
+    <ion-content style="background-image: url('img/Kuvat/tausta1.jpg'); background-size: cover" ng-controller="projectTeamController">
+        <!--<div class="bar bar-header bar-header-opacity">
+            <h1 class="title">Projektitiimi</h1>
+        </div>       
+        <div class="row" style="height: 43px;"></div>-->
+        
+        <div ng-repeat="person in people">
+            <div class="card" style=" text-align: center;">
+                <div class="item rm_bg">
+                    <img ng-src="{{person.photo}}" class="profileimg"  alt=""/> 
+                </div>
+                <div class="item item-text-wrap teammembers rm_bg" style="text-align:center;">
+                    <h2>{{person.title}}</h2>
+                    <h1>{{person.name}}</h1>                      
+                    <p>{{person.email}}</p>           
+                </div>
+                <a ng-show="{{person.linkedin}}" href="{{person.linkedin}}"><div class="item item-divider" style="background-color:rgba(245,245,245,0.65);"><img src="./img/Kuvat/Logot/Logo-Black-21px-R.png" alt=""/></div></a>
+            </div>
+        </div>
+        <div class="card" style="text-align: center;">
+            <div class="item item-divider" style="background-color:rgba(245,245,245,0.65);">
+                Sovelluskehittäjät
+            </div>
+            <div class="item item-text-wrap rm_bg">
+                - Markus Karlsson -<br/>
+                markus.karlsson@student.lamk.fi<br/><br/>
+                - Mirko Flyktman -<br/>
+                cbm.lahti@hotmail.com<br/><br/>
+                - Idris Fahim -<br/><br/>
+                - Eerik Pyykkönen -<br/><br/>
+                - Henri Huttunen -<br/><br/>
+                - Antti Keinonen -<br/><br/>
+                - Samu Saarikivi -<br/>
+            </div>
+            <div class="item item-text-wrap item-divider" style="background-color:rgba(245,245,245,0.65);">
+                Mobiilisovellus tehty osana Lahden ammattikorkeakoulun ICT-projekti kurssia.
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class='row'>
+                <div class='col'>
+                    <img src="img/Kuvat/lamk_tunnus_vaaka_mv.png" alt="" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,59 @@
+<ion-view>
+    <ion-content style="background-image: url('img/Kuvat/tausta1.jpg'); background-size: cover" ng-controller="lahellaSydantaController">
+       <!--<div class="bar bar-header bar-header-opacity">
+            <h1 class="title">Lahella Sydäntä</h1>
+        </div>
+        <div class="row" style="height: 43px;"></div>-->
+       
+       <div class="pic" style="padding-top: 5%; text-align: center;">
+            <a href="http://www.lamk.fi/tapahtumat/lahella-sydanta/Sivut/default.aspx">
+                <img src="http://niisku.lamk.fi/~duuniexpo17/img/LahSyd.jpg" alt="" style="max-height: 100%; max-width: 95%;"/>
+            </a>
+        </div>
+        <div class="card" style="padding:25px;">
+            <div ng-repeat="tx in welcomeText">
+                <!--<h3 style="text-align:center;padding:5px;" ng-if="t.style === 'Header'">
+                    {{ t.content}}
+                </h3>
+                <p style="text-align:center;padding:5px;" ng-if="t.style === 'Text'">
+                    {{ t.content}}
+                </p>-->
+                <h3 style="text-align:center;padding:5px;">
+                    {{ tx.gsx$header.$t}}
+                </h3>
+                <p style="text-align:center;padding:5px;">
+                    {{ tx.gsx$text.$t}}
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="item item-divider" style="background-color:rgba(245,245,245,0.65);padding:0px 10px;height:35px;">
+                 <h2 style="height:35px;line-height:35px;">Aikataulu</h2>
+            </div>
+            <div ng-repeat="t in textContent" class="item row rm_bg" style="border-top:none;height:50px;padding:0px;">
+                <div class="col col-20" style="height:50px;padding:0px 10px;">
+                    <p style="line-height:50px;color:#000;">{{t.gsx$time.$t}}</p>
+                </div>
+                <div class="col col-80" style="height:50px;padding:0px 10px;">
+                    <p style="line-height:50px;">{{t.gsx$artist.$t}}</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-bottom:25px;">
+            <div class="row">
+                <div class="col">
+                    <iframe id="iframe2" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Flahellasydanta%2F&tabs=timeline&width=280&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="280" height="500" style="border:none;overflow:hidden;display:block;margin:auto;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                </div>
+            </div>  
+        </div>
+        
+        <div class="card">
+            <div class='row'>
+                <div class='col'>
+                    <img src="img/Kuvat/lamk_tunnus_vaaka_mv.png" alt="" style="max-width: 100%; max-height: 100%;">
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+*{
+    font-family: 'Work Sans', sans-serif !important;
+    color: black;
+}
+
+img[usemap] {
+    border: none;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+}
+.map, #Map {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.menu.menu-left{
+    width: calc(90% - 70px) !important;
+}
+.menu-open .menu-content{
+    transform: translate3d(calc(90% - 70px), 0px, 0px) !important;
+}
+
+.page_header > h1{
+    width:100%;
+    text-align: center;
+    padding:30px;
+}
+.pop_info{
+    position:absolute;      
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+    font-size: 30px;
+    color:white;
+    z-index: 11111111111111;
+}
+.pop_info:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.button.button-full {
+    height: 100px !important;
+}
+.button {
+    padding: 0 !important;
+}
+.no-padding {
+    padding: 0px !important;
+    line-height: 100%;
+}
+.no-padding img{
+    vertical-align: middle;
+}
+@media all and (min-width: 960px) {
+    .no-padding{
+        font-size: 50px;
+    }
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+    .no-padding{
+        font-size: 5vw;
+    }
+    .menuicon {
+        height: 70px;
+    }
+}
+
+@media all and (max-width: 599px) and (min-width: 50px) {
+    .no-padding{
+        font-size: 6vw;
+    }
+    .menuicon {
+        height: 60px;
+    }
+}
+.invisible_bg {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+.padding0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.row .invisible_bg {
+   /*padding-top: 15px !important;*/
+}
+.menu_name{
+    font-size:4vw;
+}
+.item-complex .item-content {
+    padding: 4px 0px 4px 0px !important;
+}
+.popup{
+    width:90% !important;
+    height: 80% !important;
+    color:white;
+}
+
+h3.popup-title{
+    color: white;
+}
+.popup-head{
+    border-bottom:2px solid white;
+}
+.popup-container .popup{
+    background-color: rgba(25, 156, 216, 0.9);
+}
+.popup-buttons{
+    position: absolute !important;
+    text-align: center !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    padding:0px !important;
+    max-height:40px !important;
+    min-height:40px !important;
+}
+.popup-buttons .button{
+    color:#199cd8 !important;
+    border-radius:0px !important;
+    font-size:100% !important;
+}
+.fb_iframe_widget > span{
+    display:block !important;
+    margin:auto;
+    padding-top:30px;
+}
+.affiliate_logo > img{
+    padding:40px;
+    display:block;
+    margin:auto;
+    max-width: 100%;
+}
+
+.card{
+    background-color: rgba(255,255,255,0.65) !important;
+}
+.rm_bg{
+    background:none;
+}
+.header_logo{
+    height:34px;
+    margin:5px 0px;
+}
+.fb-page, 
+.fb-page span, 
+.fb-page span iframe[style] { 
+    max-width: 90% !important; 
+}
+.bar-header-opacity > .title{
+    color:#199cd8 !important;
+}
+
+.profileimg {
+    width:143px;height:143px;      
+    background-color: #eed; 
+    box-shadow: 0px 0px 40px rgba(0,0,0,0.2); 
+    -moz-box-shadow: 0px 0px 20px  rgba(0,0,0,0.6); 
+    -webkit-box-shadow: 0px 0px 20px  rgba(0,0,0,0.6); 
+    -o-box-shadow: 0px 0px 20px  rgba(0,0,0,0.6); 
+    border-radius:100px;
+}

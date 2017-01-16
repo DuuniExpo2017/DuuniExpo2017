@@ -1,0 +1,27 @@
+<ion-side-menus enable-menu-with-back-views="false">
+    <ion-side-menu side="left" style="background-color: #199cd8;">
+        <ion-header-bar align-title="center" class="bar" style="background-color: #199cd8;">
+            <div class="title">
+                Valikko
+            </div>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>                  
+                <ion-item ng-repeat="m in menuitems" class="item item-left no-padding menu-close menu_name"   href="#/app/{{ m.name }}">
+                    <img src="{{ m.url}}" class="menuicon" alt ="{{ m.url}}" height="100px">
+                    {{ m.name}}
+                </ion-item>       
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+
+    <ion-side-menu-content>
+        <ion-header-bar align-title="center" class="bar" style="background-color: #199cd8;">
+            <button class="button button-icon icon ion-navicon" ng-click="toggleLeft()"></button>
+            <div class="title">
+                <img class="header_logo" src="img/Kuvat/Logot/DuuniexpoLogo150x61.png" alt=""/>
+            </div>
+        </ion-header-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+</ion-side-menus>

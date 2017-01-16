@@ -1,0 +1,27 @@
+<ion-view>
+    <ion-content style="background-image: url('img/Kuvat/tausta1.jpg'); background-size: cover" ng-controller="collaboratorsController">
+        <!--<div class="bar bar-header bar-header-opacity">
+            <h1 class="title">Yhteistyökumppanit</h1>
+        </div>       
+        <div class="row" style="height: 43px;"></div>-->
+        
+        <div ng-repeat="object in objectList">
+            <div class="card" style=" text-align: center;">
+                <div class="item item-divider" style="background-color:rgba(245,245,245,0.65);">
+                    {{object.gsx$name.$t}}
+                </div>
+                
+                <div class="item rm_bg">
+                    <a href="{{object.gsx$homepage.$t}}" target="_blank">
+                        <img src="{{object.gsx$logo.$t}}" alt="" style="display:block;margin:auto;max-width:90%;min-width:40%;"/>
+                    </a>
+                </div>
+                
+                <div class="row">
+                    <p style="width:100%;margin:0;padding:5%;">{{object.gsx$description.$t}}</p>
+                </div>
+            </div>
+        </div>
+        
+    </ion-content>
+</ion-view>
